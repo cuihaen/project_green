@@ -50,25 +50,25 @@ img{border: 0; vertical-align: top}
 #headerArea .headerInner h1 a{width:209px;height:70px;text-indent: -1000px;overflow: hidden;color:#fff;
                               background: url(../svg/samyang_white.svg)0 50% no-repeat;display: block}
 #headerArea:hover .headerInner h1 a{background: url(../svg/samyang_CI.svg)0 50% no-repeat}
-#gnb{clear:both;width:1200px} 
+   #gnb{clear:both;width:1200px} 
 
-#gnb ul.dropdownmenu{float:left; width: 100%;height:50px}
-#gnb ul.dropdownmenu li.menu{position:relative;float:left;width:16.66%}
+   #gnb ul.dropdownmenu{float:left; width: 100%;height:50px}
+   #gnb ul.dropdownmenu li.menu{position:relative;float:left;width:16.66%}
 
-#gnb ul.dropdownmenu li a.depth1{display:block;padding: 20px 0;  color: #fff;
-         text-align: center; transition: all .5s}
-#gnb ul.dropdownmenu li.menu h3{font-weight: 500;font-size: 1.111em}     
+   #gnb ul.dropdownmenu li a.depth1{display:block;padding: 20px 0;  color: #fff;
+            text-align: center; transition: all .5s}
+   #gnb ul.dropdownmenu li.menu h3{font-weight: 500;font-size: 1.111em}     
 
-/* 2depth */
-#gnb ul.dropdownmenu li ul{width:100%;height:300px; position:absolute;top:60px;left:0;
-                           line-height:2em; display:none}
-
-#gnb ul.dropdownmenu li ul li{ text-align:center}
-#gnb ul.dropdownmenu li ul li a::after{content:'';width:120px;height:7px;border-radius: 2px;position: absolute;left:50%;top:30px;
-                                       margin-left: -60px;background:rgba(33,157,203,.2);transform:scaleX(0);transition: all .5s ease-out}
-#gnb ul.dropdownmenu li ul li a{display:block;  color:#333; transition: all .5s;padding: 3px 0;transition:all .5s ease-out;position: relative}
-#gnb ul.dropdownmenu li ul li:hover a::after{transform:scaleX(1)}
-#gnb ul.dropdownmenu li ul li a:hover{color:#0c3c4e;font-weight: 500}
+   /* 2depth */
+   #gnb ul.dropdownmenu li ul{width:100%;height:300px; position:absolute;top:60px;left:0;
+                              line-height:2em; display:none}
+   
+   #gnb ul.dropdownmenu li ul li{ text-align:center}
+   #gnb ul.dropdownmenu li ul li a::after{content:'';width:120px;height:7px;border-radius: 2px;position: absolute;left:50%;top:30px;
+                                          margin-left: -60px;background:rgba(33,157,203,.2);transform:scaleX(0);transition: all .5s ease-out}
+   #gnb ul.dropdownmenu li ul li a{display:block;  color:#333; transition: all .5s;padding: 3px 0;transition:all .5s ease-out;position: relative}
+   #gnb ul.dropdownmenu li ul li:hover a::after{transform:scaleX(1)}
+   #gnb ul.dropdownmenu li ul li a:hover{color:#0c3c4e;font-weight: 500}
 
 #headerArea .topMenu{height:80px;position: absolute;right:20px;top:30px;overflow: hidden} 
 #headerArea .topMenu ul{position:relative;float: left}
@@ -129,3 +129,24 @@ img{border: 0; vertical-align: top}
 
 #footerArea .sns li:hover{background: #1b8ab3}
 #footerArea .sns li:hover a{color:#fff}
+
+/* 팝업 */
+.pop .popup_box{position: fixed; left: 0; top: 0; z-index: 60; width: 100%; height:630px; 
+   background: rgba(255,255,255,.98);display: none;box-shadow:3px 3px 15px 1px rgba(0,0,0,.08)}
+.pop .popup{position: fixed; top: 0; left: 50%; margin-left: -600px;
+            width: 1200px; height: 480px;padding:100px 0 50px;
+            z-index: 70;display: none}
+.pop .popup>dl{width: 94%; margin:10px 3%; text-align: center}
+.pop .popup>dl>dt{font-size: 1.4em; font-weight: 500; margin-bottom: 10px; color: #0c3c4e}
+.searchArea{width:800px;height:57px;overflow: hidden;border:3px solid #333;
+            border-radius:50px;margin: 30px auto 10px}
+.popup .searchArea #search{width:700px;height:55px;border:none;float: left;margin-left: 30px;font-size: 1.15em;outline:none}
+.popup .searchArea .btn{margin: 13px 25px 13px 0;float: right;color: #333;width:30px;height:30px;display: block;
+                        background: url(../images/magnifying-glass-solid.svg);border:none;cursor: pointer}
+
+.pop .popup>dl>dd:last-child dl{width:600px;margin:0 auto;overflow: hidden}
+.pop .popup>dl>dd:last-child dt{font-size: 1.1em;color:#1b8ab3;font-weight: 500;height:325px;float: left;margin: 20px 0;width:200px;padding-top: 5px}                        
+.pop .popup>dl>dd:last-child dd{height: 320px;width:200px;float: left;padding-top: 10px}
+.pop .popup>dl>dd:last-child dd span{display: block;width:170px;height:40px;line-height: 40px;background: #eee;border-radius: 30px;margin:15px 10px}
+.pop .popup .close_btn{position: absolute; top: 25px; right: 40px; display: block; overflow: hidden; width: 50px; 
+                       height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;font-size: 2em}

@@ -110,3 +110,19 @@ $(window).on('scroll',function(){ //스크롤 값의 변화가 생기면
     $("html,body").stop().animate({"scrollTop":0},1500); 
     //스크롤을 부드럽게 이동하도록 하는 코드!
  }); 
+
+
+/* search popup*/  
+ $('.topMenu .search').click(function(e){
+    e.preventDefault();
+  
+  $('.pop .popup_box').fadeIn('fast');
+  $('.pop .popup').fadeIn('slow');
+
+});
+
+$('.close_btn,.pop .popup_box').click(function(e){
+    e.preventDefault();
+    $('.pop .popup_box').hide();
+    $('.pop .popup').hide();
+});
