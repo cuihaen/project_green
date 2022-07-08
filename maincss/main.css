@@ -278,6 +278,5 @@
 .recruit.move.active .recruitInner h3{animation: recruit_title .5s linear;animation-fill-mode: forwards;animation-delay: .5s}
 .recruit.move.active .recruitInner p{animation: recruit_title .5s linear;animation-fill-mode: forwards;animation-delay: .8s}
 .recruit.move.active .recruitInner a{animation: recruit_title .5s linear;animation-fill-mode: forwards;animation-delay: 1.2s}
-
 /* popup */
 #showimage img{border-radius: 50%;box-shadow: 5px 5px 20px 3px rgba(0,0,0,.1)}
