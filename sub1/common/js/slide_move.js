@@ -5,7 +5,7 @@ $('h3 a').click(function(e){
 
    var value=0; //이동할 스크롤의 거리
 
-   if($(this).hasClass('link1')){   //첫번째 메뉴를 클릭했을때   if($(this).is('#link1')){
+   if($(this).hasClass('link1')){   //첫번째 메뉴를 클릭했냐?   if($(this).is('#link1')){
       value= -170 + $('#content .con1').offset().top;  // 해당 콘테츠의 상단의 거리~~
    }else if($(this).hasClass('link2')){
       value= -170 + $('#content .con2').offset().top; 

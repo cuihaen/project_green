@@ -36,7 +36,7 @@
                         <li><a href="./sub3/sub3_1.html">홍보관</a></li>
                         <li><a href="./sub3/sub3_2.html">투자정보</a></li>
                         <li><a href="./sub3/sub3_3.html">IR자료실</a></li>
-                        <li><a href="./sub3/sub3_4.html">제품검색</a></li>
+                        <li><a href="./products/list.php">제품검색</a></li>
                     </ul>
                   </li>
                   <li class="m4 menu">
@@ -46,6 +46,7 @@
                         <li><a href="./sub4/sub4_2.html">주요활동</a></li>
                         <li><a href="./sub4/sub4_3.html">재단</a></li>
                         <li><a href="./sub4/sub4_4.html">사이클팀</a></li>
+                        <li><a href="./esg_news/list.php">활동소식</a></li>
                     </ul>
                   </li>
                   <li class="m5 menu">
@@ -58,9 +59,9 @@
                     </ul>
                   </li>
                   <li class="m6 menu">
-                      <h3><a class="depth1" href="./sub6/sub6_1.html">고객지원</a></h3>
+                      <h3><a class="depth1" href="./news/list.php">고객지원</a></h3>
                       <ul>
-                        <li><a href="./sub6/sub6_1.html">NEWS</a></li>
+                        <li><a href="./news/list.php">NEWS</a></li>
                         <li><a href="./sub6/sub6_2.html">FAQ</a></li>
                         <li><a href="./sub6/sub6_3.html">Contact Us</a></li>
                         <li><a href="./sub6/sub6_4.html">찾아오시는길</a></li>
@@ -69,11 +70,38 @@
                 </ul>
             </nav>
             <div class="topMenu">
-                <ul>
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">JOIN</a></li>
-                    <li><a class="search" href="#"><span class="hidden">검색</span><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                </ul>
+              <?
+                @extract($_POST);
+                @extract($_GET);
+                @extract($_SESSION);
+                
+                //$userid=$_SESSION['userid']; 정식 문법!
+                  
+                if(!$userid)
+                {
+              ?>
+              <ul>
+                  <li><a href="./login/login_form.php">LOGIN</a></li>
+                  <li><a href="./member/member_check.html">JOIN</a></li>
+                  <li><a class="search" href="#"><span class="hidden">검색</span>
+                    <i class="fa-solid fa-magnifying-glass"></i></a>
+                  </li>
+              </ul>
+              <?
+                }
+                else
+                {
+              ?>
+              <ul>
+                <li><a href="./login/logout.php">LOGOUT</a></li>
+                <li><a href="./member/member_form_modify.php">정보수정</a></li>
+                <li><a class="search" href="#"><span class="hidden">검색</span>
+                  <i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+              </ul>
+              <?
+                }
+              ?>
             </div>
         </div>
     </header>

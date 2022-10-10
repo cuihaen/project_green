@@ -5,7 +5,7 @@
          position: absolute;left: 50%;top:260px;margin-left: -50px;letter-spacing: 2px}
 
 .subNav{border-bottom: 1px solid #ccc}
-.subNav ul{width:800px;margin: 0 auto;overflow: hidden}
+.subNav ul{width:1000px;margin: 0 auto;overflow: hidden}
 .subNav li{float: left;width:200px;text-align: center;position:relative}
 .subNav li a{display: block;padding:20px 0;
             font-weight: 500;transition: all .5s ease-out}
@@ -14,13 +14,12 @@
 .subNav li:last-child a:after{display: none}
 .subNav li a:hover{color:#1b8ab3}
 .subNav li a:hover::before{content:'';display: block;width:60px;height:4px;
-                           background: #1b8ab3;position: absolute;left:50%;top:0;
-                           margin-left: -30px}
+                        background: #1b8ab3;position: absolute;left:50%;top:0;
+                        margin-left: -30px}
 .subNav li .current{color:#1b8ab3}
 .subNav li .current::before{content:'';display: block;width:60px;height:4px;
                               background: #1b8ab3;position: absolute;left:50%;top:0;
                               margin-left: -30px}
-         
 
 #content{width: 1200px;margin:0 auto}
 #content .titleArea .lineMap{margin: 40px 0 30px 950px;font-size: .9em;color: #999}

@@ -32,13 +32,14 @@
                 <li class="depth1"><h3><a href="#">사회공헌<span><i class="fa-solid fa-angle-down"></i></span></a></h3>
                     <ul>
                         <li><a href="./sub3/sub3_1.html">사회공헌개요</a></li>
-                        <li><a href="./sub3/sub3_2html">재단</a></li>
-                        <li><a href="./sub3/sub3_3.html">사이클팀</a></li>
+                        <li><a href="./sub3/sub3_2.html">주요활동</a></li>
+                        <li><a href="./sub3/sub3_3.html">재단</a></li>
+                        <li><a href="./sub3/sub3_4.html">사이클팀</a></li>
                     </ul>
                 </li>
                 <li class="depth1"><h3><a href="#">고객지원<span><i class="fa-solid fa-angle-down"></i></span></a></h3>
                     <ul>
-                      <li><a href="./sub4/sub4_1.html">NEWS</a></li>
+                      <li><a href="./news/list.php">NEWS</a></li>
                       <li><a href="./sub4/sub4_2.html">FAQ</a></li>
                       <li><a href="./sub4/sub4_3.html">찾아오시는길</a></li>
                       <li><a href="./sub4/sub4_4.html">인재채용</a></li>
@@ -47,9 +48,29 @@
               </ul>
               <ul class="btnBox">
                 <li class="btn">
-                  <a href="#">LOGIN</a>
-                  <a href="#">JOIN</a>
-                </li>
+                    <?
+                      @extract($_POST);
+                      @extract($_GET);
+                      @extract($_SESSION);
+                      
+                      //$userid=$_SESSION['userid']; 정식 문법!
+                        
+                      if(!$userid)
+                      {
+                    ?>
+                    <a href="./login/login_form.php">LOGIN</a>
+                    <a href="./member/member_check.html">JOIN</a>
+                    <?
+                      }
+                      else
+                      {
+                    ?>
+                    <a href="./login/logout.php">LOGOUT</a>
+                    <a href="./member/member_form_modify.php">정보수정</a>
+                    <?
+                      }
+                    ?>
+                  </li>
                 <li class="sns">
                   <ul>
                     <li>

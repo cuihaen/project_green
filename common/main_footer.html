@@ -67,28 +67,44 @@
             <dl>
                 <dt>삼양그룹의 다양한 제품들을 검색해보세요.</dt>
                 <dd class="searchArea">
-                    <form>
+                    <!-- <form>
                         <label for="search" class="hidden">검색어 입력</label>
                         <input id="search" name = "search" type="text" placeholder="검색어를 입력해주세요">
                         <input class ="btn" type="submit" value="">
+                    </form> -->
+                    <form method="post" action="./products/list.php?mode=search&table=products">
+                        <!-- <label for="find" class="hidden">필드명</label> -->
+                        <input  id="find" type="hidden" name="find" value="subject">
+                        <label for="search" class="hidden">검색어 입력</label>
+                        <input id="search" name = "search" type="text" placeholder="검색어를 입력해주세요">
+                        <input class ="btn" type="submit" value="">
+                        <!-- <input type="text" name="search" id="search" list="dataList_id">
+                        <datalist id="dataList_id">
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="제품"></option>
+                                <option value="게시판"></option>
+                            </datalist>
+                        <input type="submit" value="검색"> -->
                     </form>
                 </dd>
-                <dd>
+                <!-- <dd>
                    <dl>
                         <dt>추천검색어</dt>
                         <dd>
-                            <span># 폴리카보네이트</span>
-                            <span># 폴리뷰틸렌테</span>
-                            <span># 이온수지</span>
-                            <span># PET</span>
+                            <span># 내열병</span>
+                            <span># 이온교환수지</span>
+                            <span># AM BU</span>
+                            <span># 갈색설탕</span>
                         </dd>
                         <dd>
-                            <span># 상쾌환</span>
-                            <span># Qone</span>
-                            <span># About Me</span>
+                            <span># 상압병</span>
+                            <span># 내열내압병</span>
+                            <span># 내압병</span>
                         </dd>
                    </dl>
-                </dd>
+                </dd> -->
             </dl>
             <a href="#" class="close_btn"><span class="hidden">닫기</span><i class="fa-solid fa-xmark"></i></a>
         </div>

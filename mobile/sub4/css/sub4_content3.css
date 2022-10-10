@@ -4,7 +4,12 @@
 /* 회사지도영역 */
 .map{width:100%;margin:50px auto 0;padding:50px 0}
 .map h3{font-size: 1.5em;text-align: center;margin-bottom: 60px;font-weight: 500}
-.map #company{width:85%;height:300px;border:1px solid #ccc;margin: 0 auto;}
+.map #company{width:85%;height:300px;border:1px solid #ccc;margin: 0 auto;overflow: hidden;position:relative}
+.map #company .map_img{object-fit: cover;width: 100%;height:100%;object-position: 50% 50%}
+.map #company .map_bar{position:absolute;z-index: 10}
+.map #company .map_bar.bar1{right:5px;top:5px;width:100px}
+.map #company .map_bar.bar2{right:5px;top:40px;height:190px}
+.map #company .map_bar.bar3{left:5px;bottom:5px;width:120px}
 
 /* 주소 및 교통편 안내 */
 .companyAdress{width:100%;margin:0 auto;padding-bottom:100px}
@@ -22,4 +27,4 @@
 .bus .bus02{margin-top: 10px}
 .bus .bus01 span{background:#2958a7}
 .bus .bus02 span{background:#009c3d}
-.contentArea{background: url(../images/content4/company.png) right bottom no-repeat;background-size: 70%}
+.contentArea{background: url(../images/content3/company.png) right bottom no-repeat;background-size: 70%}

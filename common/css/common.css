@@ -131,10 +131,10 @@ img{border: 0; vertical-align: top}
 #footerArea .sns li:hover a{color:#fff}
 
 /* 팝업 */
-.pop .popup_box{position: fixed; left: 0; top: 0; z-index: 60; width: 100%; height:630px; 
+.pop .popup_box{position: fixed; left: 0; top: 0; z-index: 60; width: 100%; height:430px; 
    background: rgba(255,255,255,.98);display: none;box-shadow:3px 3px 15px 1px rgba(0,0,0,.08)}
 .pop .popup{position: fixed; top: 0; left: 50%; margin-left: -600px;
-            width: 1200px; height: 480px;padding:100px 0 50px;
+            width: 1200px; height: 380px;padding:100px 0 50px;
             z-index: 70;display: none}
 .pop .popup>dl{width: 94%; margin:10px 3%; text-align: center}
 .pop .popup>dl>dt{font-size: 1.4em; font-weight: 500; margin-bottom: 10px; color: #0c3c4e}
