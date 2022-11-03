@@ -36,3 +36,60 @@ a:hover{color:#513929}
   .row .col-lg-4 p{margin: 10px .75rem}
   .row .col-lg-4>span{font-size: 1.5em;font-family: 'Playfair Display', serif;color:#493325;font-weight: 600;display: block}
   .row .col-lg-4 .btn{background: #986d52;color:#fff;text-transform: uppercase;margin-top: 5px}
+
+  #limitedEdition{padding:0;overflow: hidden}
+  #limitedEdition h3{color:#fff;font-size: 2.5em;text-align: center;margin: 50px 0 30px}
+  #limitedEdition .imgBox{height:640px}
+  #limitedEdition .imgBox img{object-fit: cover;object-position: 50% 80%;width:100%;height:100%}
+  #limitedEdition .txtBox{background:#76716c;color:#fff;padding:80px 5%;height: 640px}
+  #limitedEdition .txtBox p{line-height: 2em;font-size: 1.2em;text-align: justify;font-weight: 300}
+
+
+  #products{background: #e3e1e1}
+  #products .tab_menu{overflow: hidden;width:310px;margin: 20px auto;padding:10px}
+  #products .tab_menu .tab_btn{width:140px;border:none;border-radius: 20px;background: #986d52;padding:4px 10px;color:#fff;
+                               font-family:'Playfair Display', serif;font-weight: 500}
+  #products .tab_menu .tab_btn.active{background: #493325;box-shadow: 3px 3px 5px 3px rgba(0,0,0,.1)}
+  #products .carousel-control-next-icon,#products .carousel-control-prev-icon{filter:invert(1) sepia(80)}
+  #products .carousel-inner{padding:0 20%}
+  #products .carousel-item{overflow: hidden}
+  #products .carousel-item li{float:left;padding: 0 5%}
+  #products .carousel-item li img{object-fit: contain;object-position: 50% 50%;width:100%;height:100%;box-shadow: 5px 5px 10px 3px rgba(0,0,0,.1);}
+  #products .carousel-item li dl{text-align: center;margin-top: 10px}
+  #products .carousel-item li dt{font-size: 1.1em;font-weight: 500}
+
+  #brandStory{padding-bottom: 0}
+  #brandStory h4{font-family:'Playfair Display', serif;font-weight: 700;color: #493325;font-size: 1.4em}
+  #brandStory p{width:60%;margin: 20px auto}
+  #brandStory .youtubeBox{width:70%;margin: 50px auto 70px}
+  #brandStory .youtubeBox div{position: relative;width: 100%; height: 0; padding-top: 56.25%;}
+  #brandStory .youtubeBox div iframe{position: absolute;left: 0;top: 0;width: 100%;height: 100%}
+
+  #brandStory .imgBox{background: url(../images/background_img.jpg) center bottom no-repeat;padding:80px;background-size: cover}
+  #brandStory .imgBox span{font-weight: 600;text-align: center;font-size: 3.5vw;text-transform: uppercase;display: block;margin: 0 auto;color:#fff;text-shadow: 3px 3px 5px rgba(0,0,0,.1)}
+  #brandStory .bottom{background: #f4eae4;padding:60px 15%;overflow: hidden}
+  #brandStory .bottom p{width:auto;text-align: justify;line-height: 2em}
+  #brandStory .bottom .middle{overflow: hidden}
+  /* #brandStory .bottom .col-lg-6{height:900px} */
+  #brandStory .bottom .col-lg-6.left{float: left;padding-right:5px;overflow: hidden;position:relative;height:610px}
+  #brandStory .bottom .col-lg-6.right{float: left;height:610px;background: url(../images/img2.jpg) 0 0 no-repeat;background-size: cover;}
+  #brandStory .bottom .col-lg-6.left img{width:100%}
+
+  #brandStory .bottom .col-lg-6.left span{display: block;margin: 3% auto;font-size: 2em;font-weight: 700;color:#493325;text-align: center}
+  
+  #brandStory .bottom .lastImage{overflow:hidden}
+  #brandStory .bottom .leftImage{position:absolute;left:0;bottom:0;width:100%;padding-right: 5px}
+  #brandStory .bottom .imgBox1{height:270px;overflow: hidden}
+  #brandStory .bottom .imgBox1 img{object-fit: cover;width:100%;height:100%;margin: 5px 0}
+  #brandStory .bottom .imgBox2{float:left;overflow: hidden;height:200px;width:25%;padding-right:5px}
+  #brandStory .bottom .imgBox2:last-child{padding:0}
+  #brandStory .bottom .imgBox2 img{object-fit: cover;width:100%;height:100%;margin: 5px 0}
+
+
+  footer{background: #493325;margin: 0}
+  /* .carousel.speakers{display: none} */
+
+/* 일반pc */
+@media screen and (max-width:1200px) {
+
+}
