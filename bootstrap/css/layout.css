@@ -93,3 +93,38 @@ a:hover{color:#513929}
 @media screen and (max-width:1200px) {
 
 }
+
+/* 테블릿 */
+@media screen and (max-width:992px) {
+  section{padding:80px 0}
+  #limitedEdition h3{font-size: 2.3em;margin: 30px 0}
+  #limitedEdition .imgBox,  #limitedEdition .txtBox{height:540px}
+  #brandStory .youtubeBox{width:80%;margin: 40px auto}
+  #brandStory .bottom .col-lg-6.left{height:550px}
+  #brandStory .bottom .col-lg-6.right{display: none}
+  #brandStory .bottom{padding:60px 10%}
+
+}
+
+/* 소형테블릿 */
+@media screen and (max-width:768px) {
+  #limitedEdition h3{font-size: 2em;margin: 10px 0 30px 0}
+
+  #limitedEdition .imgBox,  #limitedEdition .txtBox{height:440px}
+  #limitedEdition .txtBox{padding:50px 5%}
+  #limitedEdition .txtBox p{line-height: 1.8em;font-size: 1em}
+  #brandStory .youtubeBox{width:90%;margin: 40px auto}
+  #brandStory .bottom{padding:50px 5%}
+  #brandStory .bottom .col-lg-6.left span{margin:0 auto 20px}
+  #brandStory .bottom .col-lg-6.left{float: none;padding-right:0;height:auto}
+  #brandStory .bottom .col-lg-6.right{float: none}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  #limitedEdition h3{font-size: 1.7em;margin: 0 0 20px}
+  #limitedEdition .imgBox{height:400px;width:100%}
+  #limitedEdition .txtBox{height:300px;width:auto;padding:40px 5%}
+
+
+}
