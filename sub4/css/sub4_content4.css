@@ -70,17 +70,17 @@
 .news li:hover span:last-child{color: #333}
 
 /* popup창 */
-.subPop .sub_modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+.subPop .subModalBox{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
     background: rgba(0,0,0,.45); display: none}
-.subPop .sub_pop_btn{position: fixed; left: 0; top: 50%;  width: 100%; height: 0;  display: none;font-size: 3em;z-index: 50;margin-top: -30px}
-.subPop .sub_pop_btn a{display: block; position: absolute; top:50%; left:50%; color: rgba(255,255,255,4); margin-top: -10px;transition: all .5s;z-index: 60}
-.subPop .sub_pop_btn a:hover{color:rgba(255,255,255,8)}
-.subPop .sub_pop_btn .pre{margin-left: -560px}
-.subPop .sub_pop_btn .next{margin-left: 530px}
+.subPop .subPopBtn{position: fixed; left: 0; top: 50%;  width: 100%; height: 0;  display: none;font-size: 3em;z-index: 50;margin-top: -30px}
+.subPop .subPopBtn a{display: block; position: absolute; top:50%; left:50%; color: rgba(255,255,255,4); margin-top: -10px;transition: all .5s;z-index: 60}
+.subPop .subPopBtn a:hover{color:rgba(255,255,255,8)}
+.subPop .subPopBtn .pre{margin-left: -560px}
+.subPop .subPopBtn .next{margin-left: 530px}
 
-.subPop  .sub_popup{position: fixed; top: 50%; left: 50%; margin: -310px -470px; 
+.subPop  .subPopup{position: fixed; top: 50%; left: 50%; margin: -310px -470px; 
     width: 880px; height:560px; background: #fff; box-shadow: 5px 5px 20px 3px rgba(0,0,0,.3);
     z-index: 60; display:none;overflow: hidden;padding:30px;overflow: hidden;border-top: 6px solid #0c3c4e}
 
-.subPop .sub_popup .sub_close_btn{position: absolute; top: -3px; right: 3px; display: block; overflow: hidden; width: 50px; 
+.subPop .subPopup .subCloseBtn{position: absolute; top: -3px; right: 3px; display: block; overflow: hidden; width: 50px; 
                     height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;font-size: 2em;z-index: 70;}
