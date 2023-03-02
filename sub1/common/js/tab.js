@@ -1,5 +1,5 @@
 // JavaScript Document
- var cnt = $('.tab_menu li').size();  //탭메뉴 개수 ***
+ var cnt = $('.tabMenu li').size();  //탭메뉴 개수 ***
  $(".tabs .contlist").hide(); //모든 탭내용을 안보이게...
 $('.tabs .contlist:eq(0)').show(); // 첫번째 탭 내용만 열어라
 $('.tabs .tab1 i').css('background','#1b8ab3').css('color','#fff');

@@ -1,17 +1,17 @@
-$('#content .subPop_menu .openPop').click(function(e){
+$('#content .subPopMenu .openPop').click(function(e){
     e.preventDefault();
 
-    var ind = $(this).index('#content .subPop_menu .openPop');  // 0 1 2 3
+    var ind = $(this).index('#content .subPopMenu .openPop');  // 0 1 2 3
     
-    $('#content .modal_box').fadeIn('fast');
-    $('#content .sub_popup').fadeIn('slow');
+    $('#content .modalBox').fadeIn('fast');
+    $('#content .subPopup').fadeIn('slow');
     
 });
 
 $('.sub_close_btn,#content .modal_box').click(function(e){
     e.preventDefault();
-    $('#content .modal_box').hide();
-    $('#content .sub_popup').hide();
+    $('#content .modalBox').hide();
+    $('#content .subPopup').hide();
 });
 
 

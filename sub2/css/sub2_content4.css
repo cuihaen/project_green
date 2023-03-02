@@ -52,31 +52,31 @@
 
 /* popup창 */
 
-#content .modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+#content .modalBox{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
       background: rgba(0,0,0,.45); display: none}
-#content .sub_popup{position: fixed; top: 50%; left: 50%; margin: -400px 0 0 -600px; 
+#content .subPopup{position: fixed; top: 50%; left: 50%; margin: -400px 0 0 -600px; 
     width: 1140px; height: 734px;background: #fff; box-shadow: 5px 5px 20px 3px rgba(0,0,0,.3);
     z-index: 60; display:none;overflow: hidden;padding:30px;overflow: hidden;border-top: 6px solid #0c3c4e}
 
-#content .sub_popup .left{width:650px}
+#content .subPopup .left{width:650px}
 
 
-#content  .sub_popup .sub_close_btn{position: absolute; top: -3px; right: 3px; display: block; overflow: hidden; width: 50px; 
+#content  .subPopup .subCloseBtn{position: absolute; top: -3px; right: 3px; display: block; overflow: hidden; width: 50px; 
     height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;font-size: 2em;z-index: 70}
 
-#content .sub_popup h3{text-align: center;font-size: 1.2em; font-weight: 500; margin-top: 40px; color: #1b8ab3}
+#content .subPopup h3{text-align: center;font-size: 1.2em; font-weight: 500; margin-top: 40px; color: #1b8ab3}
 
-#content .sub_popup .top{overflow: hidden;width:880px;margin: 20px auto 0;background: #ecf3f5;padding:30px 80px}
-#content .sub_popup .top li{float: left;width:280px;margin: 0 6px}
-#content .sub_popup .top li span{display: block;text-align: center}
-#content .sub_popup .top li span:nth-child(1){font-size: 1.3em;color:#0c3c4e;margin-bottom: 10px;}
-#content .sub_popup .top li span:nth-child(1) i{font-size: 1.3em;color:#1b8ab3}
-#content .sub_popup .top li span:nth-child(2){margin: 0 auto}
-#content .sub_popup .top li span:nth-child(3){margin-top: 15px;font-size: .9em}
+#content .subPopup .top{overflow: hidden;width:880px;margin: 20px auto 0;background: #ecf3f5;padding:30px 80px}
+#content .subPopup .top li{float: left;width:280px;margin: 0 6px}
+#content .subPopup .top li span{display: block;text-align: center}
+#content .subPopup .top li span:nth-child(1){font-size: 1.3em;color:#0c3c4e;margin-bottom: 10px;}
+#content .subPopup .top li span:nth-child(1) i{font-size: 1.3em;color:#1b8ab3}
+#content .subPopup .top li span:nth-child(2){margin: 0 auto}
+#content .subPopup .top li span:nth-child(3){margin-top: 15px;font-size: .9em}
 
-#content .sub_popup .bottom{overflow: hidden;padding:30px 60px}
-#content .sub_popup .bottom ol{float: left}
-#content .sub_popup .bottom li{width:600px;height: 28px;background: rgba(27,138,179,.3);text-align: center;margin-bottom: 5px;
+#content .subPopup .bottom{overflow: hidden;padding:30px 60px}
+#content .subPopup .bottom ol{float: left}
+#content .subPopup .bottom li{width:600px;height: 28px;background: rgba(27,138,179,.3);text-align: center;margin-bottom: 5px;
                                padding: 4px 0;margin-left: -10px;border-radius: 30px}
 
-#content .sub_popup .bottom img{float: right;margin-right: -10px;}
+#content .subPopup .bottom img{float: right;margin-right: -10px;}

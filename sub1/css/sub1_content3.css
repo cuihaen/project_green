@@ -9,15 +9,15 @@
 /* 삼양가치내용 */
 .tabs{position:relative;width:2000px;left: 50%;top:0;margin-left: -1000px;
        background: #ecf3f5;padding:80px 0;overflow: hidden}
-.tabs .tab_menu{overflow: hidden;padding:0 150px;width:900px;margin:0 auto}
-.tabs .tab_menu li{float: left;text-align: center;margin-top: 40px}
-.tabs .tab_menu i{display:block;width:120px; height:90px;font-size: 3.5em;background: #fff;border-radius: 50%;
+.tabs .tabMenu{overflow: hidden;padding:0 150px;width:900px;margin:0 auto}
+.tabs .tabMenu li{float: left;text-align: center;margin-top: 40px}
+.tabs .tabMenu i{display:block;width:120px; height:90px;font-size: 3.5em;background: #fff;border-radius: 50%;
          color:#1b8ab3;padding-top: 30px;margin: 20px 15px;box-shadow: 2px 2px 10px 3px rgba(0,0,0,.1);
          transition: all .5s ease-out}
-.tabs .tab_menu li:hover i{color:#fff;background: #1b8ab3;box-shadow: 5px 5px 15px 8px rgba(0,0,0,.1)}
-.tabs .tab_menu li:hover span{color: #1b8ab3;font-weight: 500}
+.tabs .tabMenu li:hover i{color:#fff;background: #1b8ab3;box-shadow: 5px 5px 15px 8px rgba(0,0,0,.1)}
+.tabs .tabMenu li:hover span{color: #1b8ab3;font-weight: 500}
 
-.tabs .tab_menu li a{display:block;padding:10px 0;text-align:center;
+.tabs .tabMenu li a{display:block;padding:10px 0;text-align:center;
                 width:auto;font-weight:500;}
 .contlist{width:1000px;margin:20px auto 0; line-height:2em;overflow: hidden;
               padding-bottom: 30px;position: relative}

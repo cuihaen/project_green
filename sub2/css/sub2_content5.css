@@ -39,41 +39,41 @@
 .innerBox .mainService .openPop:hover::after{content:'';width:6px;height:60px;background:#11546e;position:absolute;right:0; top:0}
 
 /* popup창 */
-.subPop .sub_modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+.subPop .subModalBox{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
         background: rgba(0,0,0,.45); display: none}
-.subPop .sub_pop_btn{position: fixed; left: 0; top: 50%;  width: 100%; height: 0;  display: none;font-size: 3em;z-index: 50;margin-top: -30px}
-.subPop .sub_pop_btn a{display: block; position: absolute; top:50%; left:50%; color: rgba(255,255,255,4); margin-top: -10px;transition: all .5s;z-index: 60}
-.subPop .sub_pop_btn a:hover{color:rgba(255,255,255,8)}
-.subPop .sub_pop_btn .pre{margin-left: -560px}
-.subPop .sub_pop_btn .next{margin-left: 530px}
+.subPop .subPopBtn{position: fixed; left: 0; top: 50%;  width: 100%; height: 0;  display: none;font-size: 3em;z-index: 50;margin-top: -30px}
+.subPop .subPopBtn a{display: block; position: absolute; top:50%; left:50%; color: rgba(255,255,255,4); margin-top: -10px;transition: all .5s;z-index: 60}
+.subPop .subPopBtn a:hover{color:rgba(255,255,255,8)}
+.subPop .subPopBtn .pre{margin-left: -560px}
+.subPop .subPopBtn .next{margin-left: 530px}
 
-.subPop .sub_popup{position: fixed; top: 50%; left: 50%; margin: -310px -470px; 
+.subPop .subPopup{position: fixed; top: 50%; left: 50%; margin: -310px -470px; 
         width: 880px; height:560px; background: #fff; box-shadow: 5px 5px 20px 3px rgba(0,0,0,.3);
         z-index: 60; display:none;overflow: hidden;padding:30px;overflow: hidden;border-top: 6px solid #0c3c4e}
 
-.subPop .sub_popup h4{color:#1b8ab3;font-size: 1.2em;font-weight: 500;text-align: center;margin: 10px 0}
-.subPop .sub_popup>p{font-size: .9em;text-align: center;line-height: 2em}
+.subPop .subPopup h4{color:#1b8ab3;font-size: 1.2em;font-weight: 500;text-align: center;margin: 10px 0}
+.subPop .subPopup>p{font-size: .9em;text-align: center;line-height: 2em}
 
 /* popup0 공공/제조/서비스 */
-.subPop .popup_0 .visual>ul{overflow: hidden;width:740px;margin: 20px auto 0}
-.subPop .popup_0 .visual>ul>li{font-size: .9em;padding:15px;text-align: center}
-.subPop .popup_0 .visual>ul li span{display: block}
-.subPop .popup_0 .visual>ul li .title{color:#11546e;margin-bottom: 5px;font-weight: 500}
-.subPop .popup_0 .visual>ul li .explain{font-size: .9em}
-.subPop .popup_0 .visual>ul li .explain li{font-size: .9em}
+.subPop .popup0 .visual>ul{overflow: hidden;width:740px;margin: 20px auto 0}
+.subPop .popup0 .visual>ul>li{font-size: .9em;padding:15px;text-align: center}
+.subPop .popup0 .visual>ul li span{display: block}
+.subPop .popup0 .visual>ul li .title{color:#11546e;margin-bottom: 5px;font-weight: 500}
+.subPop .popup0 .visual>ul li .explain{font-size: .9em}
+.subPop .popup0 .visual>ul li .explain li{font-size: .9em}
 
-.subPop .popup_0 .visual>ul .topBox{border:2px solid rgba(33,157,203,.7);height: 160px;width:180px}
-.subPop .popup_0 .visual>ul .bottomBox{border:2px solid rgba(0,0,0,.3);margin-top: 30px;width:200px;height:142px}
-.subPop .popup_0 .visual>ul li:nth-child(5){margin: 30px 18px 0}
-.subPop .popup_0 .visual>ul .center{background: rgba(33,157,203,.3);border-radius: 50%;width:120px;height:120px;
+.subPop .popup0 .visual>ul .topBox{border:2px solid rgba(33,157,203,.7);height: 160px;width:180px}
+.subPop .popup0 .visual>ul .bottomBox{border:2px solid rgba(0,0,0,.3);margin-top: 30px;width:200px;height:142px}
+.subPop .popup0 .visual>ul li:nth-child(5){margin: 30px 18px 0}
+.subPop .popup0 .visual>ul .center{background: rgba(33,157,203,.3);border-radius: 50%;width:120px;height:120px;
                                    margin:25px 80px 0;position:relative}
-.subPop .popup_0 .visual>ul .center .title{margin-top: 35px;font-size: 1.2em;font-weight: 500}
-.subPop .popup_0 .visual>ul .center .arrow{position:absolute;font-size: 1.7em}
-.subPop .popup_0 .visual>ul .center .arrow01{left:-50px;top:58px}
-.subPop .popup_0 .visual>ul .center .arrow02{right:-50px;top:58px}
-.subPop .popup_0 .visual>ul .center .arrow03{right:-15px;bottom:-13px;transform: rotate(45deg)}
-.subPop .popup_0 .visual>ul .center .arrow04{left:-15px;bottom:-13px;transform: rotate(-45deg)}
-.subPop .popup_0 .visual>ul .center .arrow05{left:68px;bottom:-43px}
+.subPop .popup0 .visual>ul .center .title{margin-top: 35px;font-size: 1.2em;font-weight: 500}
+.subPop .popup0 .visual>ul .center .arrow{position:absolute;font-size: 1.7em}
+.subPop .popup0 .visual>ul .center .arrow01{left:-50px;top:58px}
+.subPop .popup0 .visual>ul .center .arrow02{right:-50px;top:58px}
+.subPop .popup0 .visual>ul .center .arrow03{right:-15px;bottom:-13px;transform: rotate(45deg)}
+.subPop .popup0 .visual>ul .center .arrow04{left:-15px;bottom:-13px;transform: rotate(-45deg)}
+.subPop .popup0 .visual>ul .center .arrow05{left:68px;bottom:-43px}
 
 /* popup1 금융 */
 
@@ -85,7 +85,7 @@
 
 
 
-.subPop .sub_popup .sub_close_btn{position: absolute; top: -3px; right: 3px; display: block; overflow: hidden; width: 50px; 
+.subPop .subPopup .subCloseBtn{position: absolute; top: -3px; right: 3px; display: block; overflow: hidden; width: 50px; 
                         height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;font-size: 2em;z-index: 70}
 
 /* 뷰티사업 */

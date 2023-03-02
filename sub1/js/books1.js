@@ -1,6 +1,6 @@
 var Books = (function() {
 
-	var $books = $( '#bk-list > li > div.bk-book' ), booksCount = $books.length;
+	var $books = $( '#bkList > li > div.bkBook' ), booksCount = $books.length;
 	
 	function init() {
 
@@ -9,22 +9,22 @@ var Books = (function() {
 			var $book = $( this ),
 				$other = $books.not( $book ),
 				$parent = $book.parent(),
-				$page = $book.children( 'div.bk-page' ),
-				$bookview = $parent.find( 'button.bk-bookview' ),
-				$content = $page.children( 'div.bk-content' ), current = 0;
+				$page = $book.children( 'div.bkPage' ),
+				$bookview = $parent.find( 'button.bkBookview' ),
+				$content = $page.children( 'div.bkContent' ), current = 0;
 
-			$parent.find( 'button.bk-bookback' ).on( 'click', function() {				
+			$parent.find( 'button.bkBookback' ).on( 'click', function() {				
 				
-				$bookview.removeClass( 'bk-active' );
+				$bookview.removeClass( 'bkActive' );
 
 				if( $book.data( 'flip' ) ) {
 					
-					$book.data( { opened : false, flip : false } ).removeClass( 'bk-viewback' ).addClass( 'bk-bookdefault' );
+					$book.data( { opened : false, flip : false } ).removeClass( 'bkViewback' ).addClass( 'bkBookdefault' );
 
 				}
 				else {
 					
-					$book.data( { opened : false, flip : true } ).removeClass( 'bk-viewinside bk-bookdefault' ).addClass( 'bk-viewback' );
+					$book.data( { opened : false, flip : true } ).removeClass( 'bkViewinside bkBookdefault' ).addClass( 'bkViewback' );
 
 				}
 					
@@ -34,30 +34,30 @@ var Books = (function() {
 
 				var $this = $( this );			
 				
-				$other.data( 'opened', false ).removeClass( 'bk-viewinside' ).parent().css( 'z-index', 0 ).find( 'button.bk-bookview' ).removeClass( 'bk-active' );
-				if( !$other.hasClass( 'bk-viewback' ) ) {
-					$other.addClass( 'bk-bookdefault' );
+				$other.data( 'opened', false ).removeClass( 'bkViewinside' ).parent().css( 'z-index', 0 ).find( 'button.bkBookview' ).removeClass( 'bk-active' );
+				if( !$other.hasClass( 'bkViewback' ) ) {
+					$other.addClass( 'bkBookdefault' );
 				}
 
 				if( $book.data( 'opened' ) ) {
-					$this.removeClass( 'bk-active' );
-					$book.data( { opened : false, flip : false } ).removeClass( 'bk-viewinside' ).addClass( 'bk-bookdefault' );
+					$this.removeClass( 'bkActive' );
+					$book.data( { opened : false, flip : false } ).removeClass( 'bkViewinside' ).addClass( 'bkBookdefault' );
 				}
 				else {
-					$this.addClass( 'bk-active' );
-					$book.data( { opened : true, flip : false } ).removeClass( 'bk-viewback bk-bookdefault' ).addClass( 'bk-viewinside' );
+					$this.addClass( 'bkActive' );
+					$book.data( { opened : true, flip : false } ).removeClass( 'bkViewback bkBookdefault' ).addClass( 'bkViewinside' );
 					$parent.css( 'z-index', booksCount );
 					current = 0;
-					$content.removeClass( 'bk-content-current' ).eq( current ).addClass( 'bk-content-current' );
+					$content.removeClass( 'bkContentCurrent' ).eq( current ).addClass( 'bkContentCurrent' );
 				}
 
 			} );
 
 			if( $content.length > 1 ) {
 
-				var $navPrev = $( '<span class="bk-page-prev"><i class="fa-solid fa-chevron-left"></i></span>' ),
-					$navNext = $( '<span class="bk-page-next"><i class="fa-solid fa-chevron-right"></i></span>' ),
-					$bookClose = $( '<span class="bk-close"><span class="hidden">닫기</span><i class="fa-solid fa-xmark"></i></span>' );
+				var $navPrev = $( '<span class="bkPagePrev"><i class="fa-solid fa-chevron-left"></i></span>' ),
+					$navNext = $( '<span class="bkPageNext"><i class="fa-solid fa-chevron-right"></i></span>' ),
+					$bookClose = $( '<span class="bkClose"><span class="hidden">닫기</span><i class="fa-solid fa-xmark"></i></span>' );
 
 				
 				$page.append( $( '<div class="btnBox"></a>' ).append( $navPrev, $navNext,$bookClose ) );
@@ -65,7 +65,7 @@ var Books = (function() {
 				$navPrev.on( 'click', function() {
 					if( current > 0 ) {
 						--current;
-						$content.removeClass( 'bk-content-current' ).eq( current ).addClass( 'bk-content-current' );
+						$content.removeClass( 'bkContentCurrent' ).eq( current ).addClass( 'bkContentCurrent' );
 					}
 					return false;
 				} );
@@ -73,15 +73,15 @@ var Books = (function() {
 				$navNext.on( 'click', function() {
 					if( current < $content.length - 1 ) {
 						++current;
-						$content.removeClass( 'bk-content-current' ).eq( current ).addClass( 'bk-content-current' );
+						$content.removeClass( 'bkContentCurrent' ).eq( current ).addClass( 'bkContentCurrent' );
 					}
 					return false;
 				} );
 
 				$bookClose.on('click',function(){
 					console.log(this);
-					$(this).parents('.bk-book').removeClass('bk-active');
-					$book.data( { opened : false, flip : false } ).removeClass( 'bk-viewinside' ).addClass( 'bk-bookdefault' );
+					$(this).parents('.bkBook').removeClass('bkActive');
+					$book.data( { opened : false, flip : false } ).removeClass( 'bkViewinside' ).addClass( 'bkBookdefault' );
 				})
 
 			}
