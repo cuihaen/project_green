@@ -49,19 +49,15 @@
 .team .btn li:hover i{color:rgba(33,157,203,.5)}
 
 
-/* .partner{width:945px; clear:both; overflow: hidden;
-    border:1px solid #999; padding:10px 0; margin:50px 300px ;}
-.partner .partnerBox{ position:relative; left:0; top:0; width:1890px;overflow:hidden} 
-.partner ul{ float:left}
-.partner li{ float:left; width:105px; height:33px} */
-
 /* 뉴스영역 */
 .news{padding:40px 0 120px}
 .news ul{overflow: hidden;margin-top: 30px;}
 .news li{float: left;width:220px;height:208px;margin:0 39px 30px;overflow: hidden;
          background: #f8f8f8;border:1px solid #eee;transition: all .5s ease-out;}
-.news li img{transform: scale(1.1);transform-origin: left bottom;transition: all .5s ease-out}
-.news li span{display: block;font-size: .85em;font-weight: 500;margin:8px 10px}
+.news li .newsImgBox{width:90%;height:130px;overflow: hidden;margin: 5% auto 0;display: block}
+.news li img{transform: scale(1.1);transform-origin: left bottom;transition: all .5s ease-out;object-fit: cover; width:100%;height:100%}
+.news li span{display: block;font-size: .85em;font-weight: 500;margin:8px 10px;text-overflow: ellipsis;overflow: hidden;
+              -webkit-line-clamp: 1;display: -webkit-box;-webkit-box-orient: vertical}
 .news li span:last-child{font-size: .6em;color:#666;font-weight: 400}
 
 .news li:hover{box-shadow: 5px 5px 15px 3px rgba(0,0,0,.1);border-color: #1b83ab}
@@ -84,3 +80,11 @@
 
 .subPop .subPopup .subCloseBtn{position: absolute; top: -3px; right: 3px; display: block; overflow: hidden; width: 50px; 
                     height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;font-size: 2em;z-index: 70;}
+
+.subPop .subPopup .txt{width:90%;margin: 20px auto 0; overflow-y: scroll;height:540px;padding:0 3%}
+.subPop .subPopup .txt dl{display: block;padding:10px;background: #ecf3f5;margin-bottom: 20px;overflow: hidden;}
+.subPop .subPopup .txt dt{font-weight: 500;color:#1b83ab;float: left}
+.subPop .subPopup .txt dd{color: #666;float: right;font-size: .8em;}
+.subPop .subPopup .txt img{width:70%;margin:0 auto 30px;display: block}
+.subPop .subPopup .txt p{font-size: .9em;line-height: 1.8em}
+.subPop .subPopup .txt .newsLink{font-size: .7em;width:100%;color: #1b83ab;margin-top: 40px;display: block;}

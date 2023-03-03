@@ -22,7 +22,7 @@ table td input,table td select{border:none;background: none;padding:5px;
 
 table td select{padding:5px 8px}
 
-table td #loadtext,table td #loadtext2,table td #loadtext3{font-size: .8em;float: right;display: block;margin: 5px 10px 0 0}
+table td .loadText1,table td .loadText2,table td .loadText3{font-size: .8em;float: right;display: block;margin: 5px 10px 0 0}
 
 
 .button .join{float: left;width: 50%;line-height: 24px;padding: 12px 0;border: 2px solid rgb(12,60,78);

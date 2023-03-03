@@ -12,8 +12,8 @@ input,select{border:none}
 
 #content input{width:100%;padding:15px 5px 15px 20px;margin-bottom: 5px;box-sizing: border-box;border: 2px solid #eee;font-size: .9em}
 
-#content #login_button{width:100%;margin: 10px auto 20px}
-#content #login_button button{width: 100%;line-height: 24px;padding: 12px 0;border: 2px solid rgb(12,60,78);
+#content .loginButton{width:100%;margin: 10px auto 20px}
+#content .loginButton button{width: 100%;line-height: 24px;padding: 12px 0;border: 2px solid rgb(12,60,78);
     background: rgb(12,60,78);color: #fff;font-size: 14px;cursor: pointer;
     box-sizing: border-box;text-align: center}
 
@@ -23,6 +23,6 @@ input,select{border:none}
 #content .find li:nth-child(1)::after{content:'';background: #bbb;width:2px;height:13px;position:absolute;right: 0;top:50%;
                                       transform: translateY(-50%)}
 
-#content #join_button{width:65%;margin: 40px auto 0}
-#content #join_button span{color:#999;font-size: .8em;margin-right: 10px}
-#content #join_button a{padding:8px;color:#1b8ab3;font-weight: 500;font-size: .95em}
+#content .joinButton{width:65%;margin: 40px auto 0}
+#content .joinButton span{color:#999;font-size: .8em;margin-right: 10px}
+#content .joinButton a{padding:8px;color:#1b8ab3;font-weight: 500;font-size: .95em}

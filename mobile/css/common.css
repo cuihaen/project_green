@@ -65,28 +65,28 @@ label {cursor:pointer}
 #gnb .btnBox .sns a{color:#fff}
 
 /* 햄버거 메뉴 */
-#headerArea .menu_ham {display: block; height: 50px; position: absolute;top:-15px;right:5px; border-radius: 5px;
+#headerArea .menuHam {display: block; height: 50px; position: absolute;top:-15px;right:5px; border-radius: 5px;
 }
-#headerArea .menu_ham span {width: 20px;height: 3px; background: #fff;position: relative;
+#headerArea .menuHam span {width: 20px;height: 3px; background: #fff;position: relative;
     text-indent: -9999px;display: block;margin: 26px 15px;border-radius: 5px;transition: all .3s;
 }
-#headerArea .menu_ham span::before {
+#headerArea .menuHam span::before {
     content: '';display: block;width: 20px;height: 3px;
     background: #fff; position: absolute;
     top: -7px;left: 0;border-radius: 5px;
 }
-#headerArea .menu_ham span::after {
+#headerArea .menuHam span::after {
     content: '';display: block;
     width: 20px;height: 3px;background: #fff;
     position: absolute;top: 7px;left: 0;border-radius: 5px;
 }
 
 /* 메뉴가 열렸을때 */
-#headerArea.mn_open .menu_ham span, #headerArea.mn_open .menu_ham span::before, #headerArea.mn_open .menu_ham span::after {
+#headerArea.mnOpen .menuHam span, #headerArea.mnOpen .menuHam span::before, #headerArea.mnOpen .menuHam span::after {
     background: #1b8ab3;transition: all .3s;z-index: 70}
-#headerArea.mn_open .menu_ham span {background: rgba(0,0,0,0)}
-#headerArea.mn_open .menu_ham span::before {transform: rotate(45deg);top: 0}
-#headerArea.mn_open .menu_ham span::after {transform: rotate(-45deg);top: 0}
+#headerArea.mnOpen .menuHam span {background: rgba(0,0,0,0)}
+#headerArea.mnOpen .menuHam span::before {transform: rotate(45deg);top: 0}
+#headerArea.mnOpen .menuHam span::after {transform: rotate(-45deg);top: 0}
 
 /* footer 공통영역 */ 
 #footerArea{background: #f8f8f8;height:280px}

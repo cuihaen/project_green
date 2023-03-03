@@ -97,10 +97,10 @@
 					<p>더 나은 세상을 만들어나가기 위해 지속적으로 노력하는<br>삼양홀딩스의 다양한 소식들을 만나보세요</p>
 				</div>
 				
-				<div class="top_section">
-					<div id="total_list">총 <span><?= $total_record ?></span> 개의 게시물이 있습니다.</div>
+				<div class="topSection">
+					<div class="totalList">총 <span><?= $total_record ?></span> 개의 게시물이 있습니다.</div>
 					<div class="right">
-						<ul class="list_style">
+						<ul class="listStyle">
 							<li class="active">
 								<a href="list.php?num=<?=$item_num?>&list_style=box&page=<?=$page?>&scale=<?=$scale?>">
 									<span class="hidden">박스형</span>
@@ -114,7 +114,7 @@
 								</a>
 							</li>
 						</ul>
-						<div class="list_count">
+						<div class="listCount">
 							<label for="scale" class="hidden">리스트개수</label>
 							<select id="scale" name="scale" onchange="location.href='list.php?&list_style=<?=$list_style?>&scale='+this.value">
 								<option value='8' <? if ($scale=='') echo 'selected' ?>>게시글수</option>
@@ -126,15 +126,15 @@
 						</div>
 					</div>
 				</div>
-				<div class="main_board">	
-					<ul id="list_top_title">
-						<li id="list_title1">번호</li>
-						<li id="list_title2">제목</li>
-						<li id="list_title3">작성자</li>
-						<li id="list_title4">작성일자</li>
-						<li id="list_title5">조회수</li>
+				<div class="mainBoard">	
+					<ul class="listTopTitle">
+						<li class="listTitle1">번호</li>
+						<li class="listTitle2">제목</li>
+						<li class="listTitle3">작성자</li>
+						<li class="listTitle4">작성일자</li>
+						<li class="listTitle5">조회수</li>
 					</ul>		
-					<div id="list_content">
+					<div class="listContent">
 						<?		
 						for ($i=$start; $i<$start+$scale && $i < $total_record; $i++)                    
 						{
@@ -164,10 +164,10 @@
 							$num_ripple = mysql_num_rows($result2); //해당 게시글에 댓글
 							
 						?>
-							<ul id="list_item">
-								<li id="list_item1"><?= $number ?></li>
-								<li id="list_item_img"><img src="<?= $item_img ?>" alt="제품이미지"></li>
-								<li id="list_item2">
+							<ul class="listItem">
+								<li class="listItem1"><?= $number ?></li>
+								<li class="listItem_img"><img src="<?= $item_img ?>" alt="제품이미지"></li>
+								<li class="listItem2">
 									<a href="view.php?table=<?=$table?>&num=<?=$item_num?>&list_style=<?=$list_style?>&page=<?=$page?>&scale=<?=$scale?>">
 									
 									<span><?= $item_subject ?>
@@ -181,9 +181,9 @@
 									</span>
 									<p><?=$item_content?></p></a>
 								</li>
-								<li id="list_item3"><?= $item_nick ?></li>
-								<li id="list_item4"><?= $item_date ?></li>
-								<li id="list_item5"><i class="fa-regular fa-eye"></i><?= $item_hit ?></li>
+								<li class="listItem3"><?= $item_nick ?></li>
+								<li class="listItem4"><?= $item_date ?></li>
+								<li class="listItem5"><i class="fa-regular fa-eye"></i><?= $item_hit ?></li>
 								
 							</ul>
 						<?
@@ -191,8 +191,8 @@
 						}
 						?>
 					</div>
-					<div id="page_button">
-						<div id="page_num"> <i class="fa-solid fa-caret-left"></i> 이전 &nbsp;&nbsp;&nbsp;&nbsp; 
+					<div class="pageButton">
+						<div class="pageNum"> <i class="fa-solid fa-caret-left"></i> 이전 &nbsp;&nbsp;&nbsp;&nbsp; 
 						<?
 							// 게시판 목록 하단에 페이지 링크 번호 출력
 							for ($i=1; $i<=$total_page; $i++)
@@ -210,7 +210,7 @@
 						&nbsp;&nbsp;&nbsp;&nbsp;다음 <i class="fa-solid fa-caret-right"></i>
 						</div>
 					</div>
-					<div id="button">
+					<div class="button">
 						<? 
 							if($userid=="admin")
 							{
@@ -241,16 +241,16 @@
 		$list_style = 'box';	// 리스트 스타일
 		echo "
 			<script>
-				$('.list_style li').removeClass('active');
-				$('.list_style li:eq(0)').addClass('active');
+				$('.listStyle li').removeClass('active');
+				$('.listStyle li:eq(0)').addClass('active');
 			</script>
 		";
 	} else if($list_style == 'list'){	// 리스트 스타일
 		echo "
 			<script>
-				$('.list_style li').removeClass('active');
-				$('.list_style li:eq(1)').addClass('active');
-				$('.main_board').addClass('list');
+				$('.listStyle li').removeClass('active');
+				$('.listStyle li:eq(1)').addClass('active');
+				$('.mainBoard').addClass('list');
 			</script>
 		";
 

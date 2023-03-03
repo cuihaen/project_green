@@ -28,20 +28,20 @@
                     cache: false, 
                     success: function(data)
                     {
-                        $("#loadtext").html(data);
+                        $(".loadText1").html(data);
                     }
                 });
             });
 
             //비밀번호 일치검사
-            $('#pass_confirm').keyup(function(){
+            $('#passConfirm').keyup(function(){
                 var pass1 = $('#pass').val();
-                var pass2 = $('#pass_confirm').val();
+                var pass2 = $('#passConfirm').val();
 
                 if(pass1==pass2){
-                    $('#loadtext2').html('비밀번호가 일치합니다.').css('color','#1b8ab3');
+                    $('.loadText2').html('비밀번호가 일치합니다.').css('color','#1b8ab3');
                 }else{
-                    $('#loadtext2').html('비밀번호가 일치하지 않습니다.').css('color','#bd0202');
+                    $('.loadText2').html('비밀번호가 일치하지 않습니다.').css('color','#bd0202');
                 }
             })
                     
@@ -56,7 +56,7 @@
                     cache: false, 
                     success: function(data)
                     {
-                        $("#loadtext3").html(data);
+                        $(".loadText3").html(data);
                     }
                 });
             });		 
@@ -157,21 +157,21 @@
                     <th scope="col"><label for="id">아이디<span class="must">*</span></label></th>
                     <td>
                         <input type="text" name="id" id="id" required>
-                        <span id="loadtext"></span>
+                        <span class="loadText1"></span>
                         <!-- 사용가능한 아이디입니다! 또는 다른 아이디를 사용하세요 라는 메세지가 뜸 = 중복검사 -->
                     </td>
                 </tr>
                 <tr>
                     <th scope="col"><label for="pass">비밀번호<span class="must">*</span></label></th>
                     <td>
-                        <input type="password" name="pass" id="pass" required>
+                        <input type="password" name="pass" class="pass" required>
                     </td>
                 </tr>
                 <tr>
-                    <th scope="col"><label for="pass_confirm">비밀번호확인<span class="must">*</span></label></th>
+                    <th scope="col"><label for="passConfirm">비밀번호확인<span class="must">*</span></label></th>
                     <td>
-                        <input type="password" name="pass_confirm" id="pass_confirm" required>
-                        <span id="loadtext2"></span>
+                        <input type="password" name="pass_confirm" id="passConfirm" required>
+                        <span class="loadText2"></span>
                     </td>
                 </tr>
                 <tr>
@@ -184,7 +184,7 @@
                     <th scope="col"><label for="nick">닉네임<span class="must">*</span></label></th>
                     <td>
                         <input type="text" name="nick" id="nick"  required>
-                        <span id="loadtext3"></span>
+                        <span class="loadText3"></span>
                         <!-- 사용가능한 닉네임입니다! 또는 다른 닉네임을 사용하세요 라는 메세지가 뜸 = 중복검사-->
                     </td>
                 </tr>
@@ -200,7 +200,8 @@
                             <option value='018'>018</option>
                             <option value='019'>019</option>
                         </select>  - 
-                <label class="hidden" for="hp2">전화번호중간4자리</label><input type="text" class="hp" name="hp2" id="hp2"  required> - <label class="hidden" for="hp3">전화번호끝4자리</label><input type="text" class="hp" name="hp3" id="hp3"  required>
+                <label class="hidden" for="hp2">전화번호중간4자리</label><input type="text" class="hp" name="hp2" id="hp2" required> - 
+                <label class="hidden" for="hp3">전화번호끝4자리</label><input type="text" class="hp" name="hp3" id="hp3" required>
                         
                     </td>
                 </tr>

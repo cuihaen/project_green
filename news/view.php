@@ -147,18 +147,18 @@
 				<div class="summary">
 					<p>더 나은 세상을 만들어나가기 위해 지속적으로 노력하는<br>삼양홀딩스의 다양한 소식들을 만나보세요</p>
 				</div>
-			<div  class="selected_content">
-				<div id="view_title">
-					<div id="view_title1">
+			<div  class="selectedContent">
+				<div class="viewTitle">
+					<div class="viewTitle1">
 						<?= $item_subject ?>
 					</div>
-					<ul id="view_title2">
+					<ul class="viewTitle2">
 						<li><?= $item_nick ?></li>
 						<li><?= $item_date ?></li>
 						<li><i class="fa-regular fa-eye"></i> <?= $item_hit ?></li>
 					</ul>	
 				</div>
-				<div id="view_content">
+				<div class="viewContent">
 					<?
 						for ($i=0; $i<3; $i++)
 						{
@@ -197,7 +197,7 @@
 					$ripple_content = str_replace(" ", "&nbsp;", $ripple_content);
 					$ripple_date    = $row_ripple[regist_day];
 				?>
-					<ul class="ripple_content">
+					<ul class="rippleContent">
 						<li><?=$ripple_nick?></li>
 						<li>
 							<? 
@@ -205,7 +205,7 @@
 								if($this_ripple==$ripple_num){
 						
 							?>
-								<form class="modify_form" name="modify_form" method="post" action="insert_ripple.php?table=<?=$table?>&num=<?=$item_num?>&list_style=<?=$list_style?>&mode=ripple_modify&page=<?=$page?>&scale=<?=$scale?>&ripple_num=<?=$this_ripple?>">
+								<form class="modifyForm" name="modify_form" method="post" action="insert_ripple.php?table=<?=$table?>&num=<?=$item_num?>&list_style=<?=$list_style?>&mode=ripple_modify&page=<?=$page?>&scale=<?=$scale?>&ripple_num=<?=$this_ripple?>">
 								<textarea rows="5" cols="65" name="ripple_content"><?=$ripple_content?></textarea>
 								<a href="#" onclick="check_input2()">완료</a>
 								</form>
@@ -245,15 +245,15 @@
 				<?
 						}
 				?>			
-					<form class="ripple_form" name="ripple_form" method="post" action="insert_ripple.php?table=<?=$table?>&num=<?=$item_num?>&list_style=<?=$list_style?>&page=<?=$page?>&scale=<?=$scale?>">  
-						<div id="ripple_box">
+					<form class="rippleForm" name="ripple_form" method="post" action="insert_ripple.php?table=<?=$table?>&num=<?=$item_num?>&list_style=<?=$list_style?>&page=<?=$page?>&scale=<?=$scale?>">  
+						<div class="rippleBox">
 							<span><?=$usernick?></span>
 							<textarea rows="5" cols="65" name="ripple_content"></textarea>
 							<a href="#" onclick="check_input()">등록</a>
 						</div>
 					</form>
 				</div> <!-- end of ripple -->
-				<div id="view_button">
+				<div class="viewButton">
 					<? 
 						if($userid=="admin" || $userlevel==1)
 						{

@@ -92,21 +92,21 @@
 			<p>삼양은 더불어 행복해지기 위해 인재육성, 환경보전, 건강증진을 위한<br>
 				다양한 사회공헌 활동을 적극적으로 전개하고 있습니다.</p>    
 		</div>
-		<div class="selected_content">
-			<div id="view_title">
-				<div id="view_title1">
+		<div class="selectedContent">
+			<div class="viewTitle">
+				<div class="viewTitle1">
 					<?= $item_subject ?>
 				</div>
-				<ul id="view_title2">
+				<ul class="viewTitle2">
 					<li><?= $item_nick ?></li>
 					<li><?= $item_date ?></li>
 					<li><i class="fa-regular fa-eye"></i> <?= $item_hit ?></li>
 				</ul>	
 			</div>
-			<div id="view_content">
+			<div class="viewContent">
 				<?= $item_content ?>
 			</div>
-			<div id="view_button">
+			<div class="viewButton">
 				<? 
 					if($userid )
 					{

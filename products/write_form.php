@@ -20,8 +20,8 @@
 
 		$row = mysql_fetch_array($result);       
 	
-		$item_subject     = $row[subject];
-		$item_content     = $row[content];
+		$item_subject = $row[subject];
+		$item_content = $row[content];
 
 		$item_file_0 = $row[file_name_0];
 		$item_file_1 = $row[file_name_1];
@@ -99,7 +99,7 @@
 					<p>삼양홀딩스는 고객의 더욱 편리하고 풍요로운 생활을 위해<br>
 					최고 기술과 최상의 품질을 목표로 끊임없이 노력하고 있습니다.</p>
 				</div>
-				<div class="write_content">
+				<div class="writeContent">
 					<?
 						if($mode=="modify")
 						{
@@ -116,8 +116,8 @@
 					<?
 						}
 					?>
-						<div id="write_form">
-							<dl class="user_info">
+						<div class="writeForm">
+							<dl class="userInfo">
 								<dt>닉네임</dt>
 								<dd><?=$usernick?></dd>
 							</dl>
@@ -128,13 +128,13 @@
 										if($mode=="modify")
 										{
 									?>
-									<input id="title_box" type="text" name="subject" value="<?=$item_subject?>">
+									<input id="titleBox" type="text" name="subject" value="<?=$item_subject?>">
 									<?
 										}	
 										else if( $userid=="admin" && ($mode != "modify") )
 										{
 									?>
-									<input id="title_box" type="text" name="subject" placeholder="게시글의 제목을 입력해주세요">
+									<input id="titleBox" type="text" name="subject" placeholder="게시글의 제목을 입력해주세요">
 									<?
 										}
 									?>
@@ -148,13 +148,13 @@
 										{
 									?>
 									<div>
-										<label for="html_ok">html쓰기</label>
-										<input type="checkbox" name="html_ok" id="html_ok" value="y">
+										<label for="htmlOk">html쓰기</label>
+										<input type="checkbox" name="html_ok" id="htmlOk" value="y">
 									</div>
 									<?
 										}
 									?>
-									<textarea id="board_content" rows="15" cols="79" name="content"><?=$item_content?></textarea>
+									<textarea id="boardContent" rows="15" cols="79" name="content"><?=$item_content?></textarea>
 									<div class="uploadImage">
 										<dl>
 											<dt> 이미지파일1</dt>
@@ -163,7 +163,7 @@
 												<? 	if ($mode=="modify" && $item_file_0)
 													{
 												?>
-													<span class="delete_ok"><?=$item_file_0?> 파일이 등록되어 있습니다. <input type="checkbox" name="del_file[]" value="0"> 삭제</span>
+													<span class="deleteOk"><?=$item_file_0?> 파일이 등록되어 있습니다. <input type="checkbox" name="del_file[]" value="0"> 삭제</span>
 												<?
 													}
 												?>
@@ -176,7 +176,7 @@
 												<? 	if ($mode=="modify" && $item_file_1)
 													{
 												?>
-													<span class="delete_ok"><?=$item_file_1?> 파일이 등록되어 있습니다. <input type="checkbox" name="del_file[]" value="1"> 삭제</span>
+													<span class="deleteOk"><?=$item_file_1?> 파일이 등록되어 있습니다. <input type="checkbox" name="del_file[]" value="1"> 삭제</span>
 												<?
 													}
 												?>
@@ -189,7 +189,7 @@
 												<? 	if ($mode=="modify" && $item_file_2)
 												{
 												?>
-													<span class="delete_ok"><?=$item_file_2?> 파일이 등록되어 있습니다. <input type="checkbox" name="del_file[]" value="2"> 삭제</span>
+													<span class="deleteOk"><?=$item_file_2?> 파일이 등록되어 있습니다. <input type="checkbox" name="del_file[]" value="2"> 삭제</span>
 												<?
 													}
 												?>
@@ -199,7 +199,7 @@
 								</dd>						
 							</dl>
 						</div>
-						<div id="write_button">
+						<div class="writeButton">
 							<a href="list.php?table=<?=$table?>&page=<?=$page?>&scale=<?=$scale?>">취소</a>
 							<a class="complate" href="#" onclick="check_input()">완료</a>
 						</div>

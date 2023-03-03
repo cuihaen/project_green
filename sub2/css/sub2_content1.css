@@ -11,7 +11,7 @@
 .affiliate li:nth-child(1){margin-right: 20px}
 .affiliate dl{width:520px;margin:20px auto;text-align: justify;position: relative}
 .affiliate dt{font-weight: 500;font-size: 1.2em;color: #1b8ab3;margin-bottom: 15px}
-.affiliate .subPop_menu .openPop{display: block;width:140px;height:25px;margin-top: 10px;font-size: .95em;
+.affiliate .subPopMenu .openPop{display: block;width:140px;height:25px;margin-top: 10px;font-size: .95em;
                        color: #1b8ab3;margin-left: 380px;padding:10px 0;
                        background: url(../images/content1/arrow.png) right center no-repeat}
 .affiliate li:hover{width:572px;height:572px;background: #dce5e8;
@@ -28,7 +28,7 @@
 .subPop .subPopBtn .pre{margin-left: -560px}
 .subPop .subPopBtn .next{margin-left: 530px}
 
-.subPop  .subPopup{position: fixed; top: 50%; left: 50%; margin: -310px -470px; 
+.subPop .subPopup{position: fixed; top: 50%; left: 50%; margin: -310px -470px; 
                     width: 880px; height:560px; background: #fff; box-shadow: 5px 5px 20px 3px rgba(0,0,0,.3);
                     z-index: 60; display:none;overflow: hidden;padding:30px;overflow: hidden;border-top: 6px solid #0c3c4e}
 
@@ -44,7 +44,7 @@
 .subPop .subPopup .top  table{width:410px;border-top: 2px solid #1b8ab3;border-bottom: 1px solid #666;font-size: .8em;margin-top: 10px}
 .subPop .subPopup .top  table tr{border-bottom:1px solid #ccc}
 .subPop .subPopup .top  table tr:last-child{border:none}
-.subPop .subPopup .top  table th,.subPop .sub_popup .top dd table td{padding:3px 0;line-height: 2em}
+.subPop .subPopup .top  table th,.subPop .subPopup .top dd table td{padding:3px 0;line-height: 2em}
 .subPop .subPopup .top  table th{background: #ecf3f5;padding:0 10px}
 .subPop .subPopup .top  table td{text-align: left;padding-left: 10px}
 

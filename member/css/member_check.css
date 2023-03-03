@@ -26,13 +26,13 @@ body{background: #ecf3f5}
 .join .policy{padding: 10px; overflow-y: scroll; height: 80px; margin: 20px 0;border: 1px solid #ddd;
              background: #fff; font-size: 14px; line-height: 1.5em;}
 .join .check{color: #333; margin: 20px 0 60px}
-.join .allcheck_box{padding:0 0 25px 0}
-.join .allcheck{width:40%;padding:10px 0 20px}
-.join .allcheck .check_btn{display: inline-block;width: 18px; height: 18px; background-color: transparent;
+.join .allCheckBox{padding:0 0 25px 0}
+.join .allCheck{width:40%;padding:10px 0 20px}
+.join .allCheck .checkBtn{display: inline-block;width: 18px; height: 18px; background-color: transparent;
                            border: 2px solid #999; border-radius: 50%;margin: 0px 15px -3px 0px}
-.join .allcheck .check_btn.active{background:#fff url(../images/checked_bg.png) center center no-repeat;
+.join .allCheck .checkBtn.active{background:#fff url(../images/checked_bg.png) center center no-repeat;
                                   border: 2px solid rgb(12,60,78)}
-.join .allcheck span{font-weight: 500;font-size: 1.1em;margin-right: 10px;color:rgb(12,60,78)}
+.join .allCheck span{font-weight: 500;font-size: 1.1em;margin-right: 10px;color:rgb(12,60,78)}
 .join .button{overflow: hidden}
 .join .button .ok{float: left;width: 50%;line-height: 24px;padding: 12px 0;border: 2px solid rgb(12,60,78);
                      background: rgb(12,60,78);color: #fff;font-size: 14px;cursor: pointer;

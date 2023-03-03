@@ -10,15 +10,15 @@ input,select{border:none;box-sizing: border-box}
                          position: absolute;left:43px;top:43px;background:rgb(33,157,203)}
 .summary{text-align: center;margin-bottom: 20px}
 
-.selected_content{margin: 50px 0;padding-bottom: 150px;position:relative}
+.selectedContent{margin: 50px 0;padding-bottom: 150px;position:relative}
 
-.selected_content #view_title #view_title1{padding:15px 30px;border-top: 1px solid #999;background: #ecf3f5;font-size: 1.2em}
-.selected_content #view_title #view_title2{padding:10px 30px;border-top:1px solid #ccc;overflow: hidden}
-.selected_content #view_title #view_title2 li:nth-child(1){float: left;padding:0 20px 0 0;border-right: 2px solid #ddd;color:#1b8ab3}
-.selected_content #view_title #view_title2 li:nth-child(2){float: left;padding:0 20px}
-.selected_content #view_title #view_title2 li:last-child{float: right;border: none}
-.selected_content #view_content{border-top: 1px solid #ccc;border-bottom: 1px solid #999;padding:20px 30px}
-.selected_content #view_button{position:absolute;right:10px;bottom:60px}
-.selected_content #view_button a{margin: 0 2px;color:#fff;font-weight: 500;font-size: .9em;text-align: center;padding:5px 20px;background: #999}
-.selected_content #view_button .write{background: #1b8ab3}
-.selected_content #view_button .list{background: #0c3c4e}
+.selectedContent .viewTitle .viewTitle1{padding:15px 30px;border-top: 1px solid #999;background: #ecf3f5;font-size: 1.2em}
+.selectedContent .viewTitle .viewTitle2{padding:10px 30px;border-top:1px solid #ccc;overflow: hidden}
+.selectedContent .viewTitle .viewTitle2 li:nth-child(1){float: left;padding:0 20px 0 0;border-right: 2px solid #ddd;color:#1b8ab3}
+.selectedContent .viewTitle .viewTitle2 li:nth-child(2){float: left;padding:0 20px}
+.selectedContent .viewTitle .viewTitle2 li:last-child{float: right;border: none}
+.selectedContent .viewContent{border-top: 1px solid #ccc;border-bottom: 1px solid #999;padding:20px 30px}
+.selectedContent .viewButton{position:absolute;right:10px;bottom:60px}
+.selectedContent .viewButton a{margin: 0 2px;color:#fff;font-weight: 500;font-size: .9em;text-align: center;padding:5px 20px;background: #999}
+.selectedContent .viewButton .write{background: #1b8ab3}
+.selectedContent .viewButton .list{background: #0c3c4e}

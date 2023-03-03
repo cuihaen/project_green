@@ -37,14 +37,14 @@
         }
         $(document).ready(function() {
             //비밀번호 일치검사
-            $('#pass_confirm').keyup(function(){
+            $('#passConfirm').keyup(function(){
                 var pass1 = $('#pass').val();
-                var pass2 = $('#pass_confirm').val();
+                var pass2 = $('#passConfirm').val();
 
                 if(pass1==pass2){
-                    $('#loadtext1').html('비밀번호가 일치합니다.').css('color','#1b8ab3');
+                    $('.loadText1').html('비밀번호가 일치합니다.').css('color','#1b8ab3');
                 }else{
-                    $('#loadtext1').html('비밀번호가 일치하지 않습니다.').css('color','#bd0202');
+                    $('.loadText1').html('비밀번호가 일치하지 않습니다.').css('color','#bd0202');
                 }
             })
             //닉네임 중복검사
@@ -58,7 +58,7 @@
                     cache: false, 
                     success: function(data)
                     {
-                        $("#loadtext2").html(data);
+                        $(".loadText2").html(data);
                     }
                 });
             });	
@@ -162,10 +162,10 @@
             <h2>회원정보수정</h2>
             <p><span class="must">*</span>는 필수입력 항목입니다.</p>
             <form  name="member_form" method="post" action="modify.php"> 
-                <ul id="form_join">
+                <ul class="formJoin">
                     <li>
                         <span>아이디<span class="must">*</span></span>
-                        <span class="user_id"><?= $row[id] ?></span>
+                        <span class="userId"><?= $row[id] ?></span>
                     </li>
                     <li>
                         <span>비밀번호<span class="must">*</span></span>
@@ -174,8 +174,8 @@
                     <li>
                         <span>비밀번호 확인<span class="must">*</span></span>
                         <span>
-                            <input type="password" name="pass_confirm" id="pass_confirm" value="" placeholder="ex) samyang12!">
-                            <span id="loadtext1"></span>
+                            <input type="password" name="pass_confirm" id="passConfirm" value="" placeholder="ex) samyang12!">
+                            <span id="loadText1"></span>
                         </span>
                     </li>
                     <li>
@@ -185,15 +185,15 @@
                     <li>
                         <span>닉네임<span class="must">*</span></span>
                         <span>
-                            <input type="text" name="nick" id ="nick" value="<?= $row[nick] ?>">
-                            <span id="loadtext2"></span>
+                            <input type="text" name="nick" id = "nick" value="<?= $row[nick] ?>">
+                            <span class="loadText2"></span>
                         </span>
                     </li>
                     <li class="telBox">
                         <span>휴대폰<span class="must">*</span></span>
                         <span>
                             <label class="hidden" for="hp1">전화번호앞3자리</label>
-                            <select class="hp" name="hp1" id="hp1"> 
+                            <select name="hp1" id="hp1"> 
                                 <option value='010' <? if ($hp1=='010') echo 'selected' ?>>010</option>
                                 <option value='011' <? if ($hp1=='011') echo 'selected' ?>>011</option>
                                 <option value='016' <? if ($hp1=='016') echo 'selected' ?>>016</option>
@@ -208,7 +208,7 @@
                     <li>
                         <span>이메일</span>
                         <span><input type="text" id="email1" name="email1" value="<?= $email1 ?>">
-                            @ <input type="text" name="email2" value="<?= $email2 ?>">
+                            @ <input type="text" id="email2" name="email2" value="<?= $email2 ?>">
                         </span>
                     </li>
                 </ul>

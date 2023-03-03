@@ -33,30 +33,30 @@
 
 /* popup창 */
 
-#content .modal_box{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+#content .modalBox{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
       background: rgba(0,0,0,.45); display: none}
-#content .sub_popup{position: fixed; top: 0; left: 0;width: 100%; height: 100%;background: #fff;
+#content .subPopup{position: fixed; top: 0; left: 0;width: 100%; height: 100%;background: #fff;
                     z-index: 90; display:none;overflow-y: scroll;padding-top: 50px}
 
 
 
-#content .sub_popup .pop_header{width:100%;height:45px;position:fixed;left: 0;top:0;background: #ecf3f5;box-shadow: 5px 5px 10px 2px rgba(0,0,0,.1);
+#content .subPopup .pop_header{width:100%;height:45px;position:fixed;left: 0;top:0;background: #ecf3f5;box-shadow: 5px 5px 10px 2px rgba(0,0,0,.1);
                                 z-index: 100;text-align: center;line-height: 45px;font-size: 1.3em;color:rgba(33,157,203,.7)}
-#content .sub_popup .sub_close_btn{position: absolute; top: -10px; right: -3px; display: block; overflow: hidden; width: 50px; font-size: 1.5em;
+#content .subPopup .subCloseBtn{position: absolute; top: -10px; right: -3px; display: block; overflow: hidden; width: 50px; font-size: 1.5em;
                                    height: 50px; padding: 9px 9px;color:rgba(33,157,203,.7);text-align: center;z-index: 90}
 
-#content .sub_popup h3{text-align: center;font-size: 1.2em; font-weight: 500; margin-top: 40px; color: #1b8ab3}
+#content .subPopup h3{text-align: center;font-size: 1.2em; font-weight: 500; margin-top: 40px; color: #1b8ab3}
 
-#content .sub_popup .top{overflow: hidden;width:100%;margin: 15px auto 0;background: #ecf3f5;padding:30px 0}
-#content .sub_popup .top li{width:90%;margin: 20px auto 10px}
-#content .sub_popup .top li span{display: block;text-align: center}
-#content .sub_popup .top li span:nth-child(1){font-size: 1.1em;color:#0c3c4e;margin-bottom: 10px;}
-#content .sub_popup .top li span:nth-child(1) i{font-size: 1.2em;color:#1b8ab3}
-#content .sub_popup .top li span:nth-child(2){margin: 0 auto}
-#content .sub_popup .top li span:nth-child(3){margin-top: 15px;font-size: .9em}
+#content .subPopup .top{overflow: hidden;width:100%;margin: 15px auto 0;background: #ecf3f5;padding:30px 0}
+#content .subPopup .top li{width:90%;margin: 20px auto 10px}
+#content .subPopup .top li span{display: block;text-align: center}
+#content .subPopup .top li span:nth-child(1){font-size: 1.1em;color:#0c3c4e;margin-bottom: 10px;}
+#content .subPopup .top li span:nth-child(1) i{font-size: 1.2em;color:#1b8ab3}
+#content .subPopup .top li span:nth-child(2){margin: 0 auto}
+#content .subPopup .top li span:nth-child(3){margin-top: 15px;font-size: .9em}
 
-#content .sub_popup .bottom ol{width: 90%;margin:30px auto}
-#content .sub_popup .bottom li{width:100%;height: 28px;background: rgba(27,138,179,.3);text-align: center;margin-bottom: 13px;
+#content .subPopup .bottom ol{width: 90%;margin:30px auto}
+#content .subPopup .bottom li{width:100%;height: 28px;background: rgba(27,138,179,.3);text-align: center;margin-bottom: 13px;
                                padding: 4px 0;border-radius: 30px;line-height: 28px}
 
-#content .sub_popup .bottom img{display: block;width:100%;margin:0 auto}
+#content .subPopup .bottom img{display: block;width:100%;margin:0 auto}

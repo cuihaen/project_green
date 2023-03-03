@@ -29,19 +29,19 @@
             <h2>LOGIN</h2>
             <p>회원가입시 등록하신 아이디와 비밀번호를 입력해주세요.</p>
             <form  name="member_form" method="post" action="login.php"> 
-                <div id="id_pw_input">
+                <div class="idPwInput">
                     <ul>
                         <li>
                             <label class="hidden" for="id">ID</label>
-                            <input type="text" name="id" class="login_input" required placeholder="아이디를 입력하세요.">
+                            <input type="text" name="id" class="loginInput" required placeholder="아이디를 입력하세요.">
                         </li>
                         <li> 
                             <label class="hidden" for="pass">PASSWORD</label>
-                            <input type="password" name="pass" class="login_input" required placeholder="비밀번호를 입력하세요.">
+                            <input type="password" name="pass" class="loginInput" required placeholder="비밀번호를 입력하세요.">
                         </li>
                     </ul>						
                 </div>
-                <div id="login_button">
+                <div class="loginButton">
                     <button type="submit">로그인</button>
                 </div>
 
@@ -49,7 +49,7 @@
                     <li><a href="id_find.php">아이디 찾기</a></li>
                     <li><a href="pw_find.php">비밀번호 찾기</a></li>
                 </ul>
-                <div id="join_button">
+                <div class="joinButton">
                     <span>아직 회원이 아니신가요?</span>
                     <a href="../member/member_check.html">회원가입</a>
                 </div>

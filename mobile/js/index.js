@@ -19,20 +19,20 @@ $(document).ready(function() {
 
    var op = false;  //네비가 열려있으면(true) , 닫혀있으면(false)
  
-   $(".menu_ham").click(function(e) {
+   $(".menuHam").click(function(e) {
        e.preventDefault();
        var documentHeight =  $(document).height();
        $("#gnb").css('height',documentHeight); 
 
        if(op==false){ // 네비가 닫혀있으면 열어라
            $("#gnb").stop().animate({right:0,opacity:1}, 'fast');
-           $('#headerArea').addClass('mn_open');
+           $('#headerArea').addClass('mnOpen');
            $('body').css({overflow:"hidden"});
            //$('.nav_bg').fadeIn();
            op=true;
        } else { // 네비가 열려있으면 닫아라
            $("#gnb").stop().animate({right:'-100%',opacity:0}, 'fast');
-           $('#headerArea').removeClass('mn_open');
+           $('#headerArea').removeClass('mnOpen');
            $('body').css({overflow:"auto"});
            //$('.nav_bg').fadeOut();
            op=false;

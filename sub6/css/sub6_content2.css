@@ -40,7 +40,8 @@ input,textarea{border:none;resize: none}
 .moreQuestion .mailContent .form-group{padding: 5px 10px; background-color: #fff; margin: 10px 0; border-radius: 15px; overflow: hidden;
                                         box-shadow: inset 3px 3px 5px 2px rgba(0,0,0,.1);position:relative}
 .moreQuestion .mailContent .form-group label{float: left;width:30%;display: block}
-.moreQuestion .mailContent .form-group input,.moreQuestion .mail_content .form-group textarea{width:58%;display: block;padding:10px 20px;
+.moreQuestion .mailContent .form-group input,
+.moreQuestion .mailContent .form-group textarea{width:58%;display: block;padding:10px 20px;
                                             font-size: .9em;margin-top: 3px;border-left: 2px solid #eee;outline: none}
 .moreQuestion .mailContent .row .send .btn.btn-success.btn-lg{background: rgba(33,157,203);padding:5px 50px 3px;font-size: 1em;
     text-align: center;line-height: 45px;border-radius: 20px;color:#fff;margin: 20px auto;border:none;cursor: pointer;transition: all .5s ease-out}

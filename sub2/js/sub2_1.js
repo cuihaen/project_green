@@ -38,7 +38,7 @@
                 txt+= '</table>';
             txt+= '</div>';    
             txt+= '<div class="textBox">'+chemical[i].explain+'</div>'; 
-            $('.subPop .sub_popup .txt').html(txt);
+            $('.subPop .subPopup .txt').html(txt);
         };
 
         // popOpen
@@ -47,7 +47,7 @@
             
             ind = $(this).index('.subPop .subPopMenu .openPop');  // 0 1 2 3
       
-            $('.subPop_btn').fadeIn('slow');
+            $('.subPopBtn').fadeIn('slow');
             $('.subPop .subModalBox').fadeIn('fast');
             $('.subPop .subPopup').fadeIn('slow');
       

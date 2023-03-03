@@ -30,15 +30,15 @@ getParams();  //함수호출
 
 
 var cnt=$('.tabMenu li').size();  //탭메뉴 개수 ***
-$(".tabs .contlist").hide(); //모든 탭내용을 안보이게...
+$(".tabs .contList").hide(); //모든 탭내용을 안보이게...
 
 if(key==1 || key ==2 || key ==3){
-   $('.tabs .contlist:eq('+(key-1)+')').show(); // 첫번째 탭 내용만 열어라
+   $('.tabs .contList:eq('+(key-1)+')').show(); // 첫번째 탭 내용만 열어라
    $('.tabMenu li:eq('+(key-1)+')').css('background','rgba(12,60,78,.8)').css('color','#fff'); // 클릭한 해당 탭메뉴만 활성화
    $('.tabMenu li:eq('+(key-1)+') a').css('color','#fff');//첫번째 탭메뉴 활성화
           //자바스크립트의 상대 경로의 기준은 => 스크립트 파일을 불러들인 html파일이 저장된 경로 기준***
 }else{
-   $('.tabs .contlist:eq(0)').show(); // 첫번째 탭 내용만 열어라
+   $('.tabs .contList:eq(0)').show(); // 첫번째 탭 내용만 열어라
    $('.tabMenu li:eq(0)').css('background','rgba(12,60,78,.8)').css('color','#fff'); // 클릭한 해당 탭메뉴만 활성화
    $('.tabMenu li:eq(0) a').css('color','#fff');//첫번째 탭메뉴 활성화
 }
@@ -50,8 +50,8 @@ $('.tabs .tab').click(function(e){
    var ind = $(this).index('.tabs .tab');  // 클릭시 해당 index를 뽑아준다
    //console.log(ind);
 
-   $(".tabs .contlist").hide(); //모든 탭내용을 안보이게...
-   $(".tabs .contlist:eq("+ind+")").show(); //클릭한 해당 탭내용만 보여라
+   $(".tabs .contList").hide(); //모든 탭내용을 안보이게...
+   $(".tabs .contList:eq("+ind+")").show(); //클릭한 해당 탭내용만 보여라
    $('.tabMenu li a').css('color','#0c3c4e');
    $('.tabMenu li').css('background','#fff').css('color','#0c3c4e'); //모든 탭메뉴를 비활성화
    $('.tabMenu li:eq('+ind+')').css('background','rgba(12,60,78,.8)').css('color','#fff'); // 클릭한 해당 탭메뉴만 활성화
