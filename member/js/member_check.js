@@ -2,7 +2,7 @@ $(document).ready(function(){
         
     //    회원가입 개인정보 동의 ------------------------------------
     
-    $('.check_agree').on('click',check_agree);
+    $('.checkAgree').on('click',check_agree);
     
     function check_agree(e){
 
@@ -20,14 +20,14 @@ $(document).ready(function(){
     }
 
        //모두 체크/해제
-    $('.allcheck').toggle(function(e){
+    $('.allCheck').toggle(function(e){
         e.preventDefault();
         $('input[type="checkbox"]').attr('checked',true);
-        $(this).find('.check_btn').addClass('active');
+        $(this).find('.checkBtn').addClass('active');
     },function(e){
         e.preventDefault();
         $('input[type="checkbox"]').attr('checked',false);
-        $(this).find('.check_btn').removeClass('active');
+        $(this).find('.checkBtn').removeClass('active');
     });    
 
     
